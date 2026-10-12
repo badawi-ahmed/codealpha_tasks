@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Frame Gallery | CodeAlpha</title>
+
+    <meta
+        name="description"
+        content="Explore a beautiful collection of nature, architecture, travel, and wildlife photography."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo" aria-label="Frame Gallery Home">
+            <span class="logo-icon">F</span>
+            <span>FRAME<span class="logo-light">/</span>GALLERY</span>
+        </a>
+
+        <span class="header-label">
+            <span class="status-dot"></span>
+            CREATIVE COLLECTION
+        </span>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+
+                <span class="eyebrow">A WORLD THROUGH THE LENS</span>
+
+                <h1>
+                    Every picture<br>
+                    tells a <span>story.</span>
+                </h1>
+
+                <p>
+                    Explore a curated collection of beautiful moments,
+                    extraordinary places, and the art of photography.
+                </p>
+
+                <a href="#gallery" class="explore-btn">
+                    Explore Gallery
+                    <span aria-hidden="true">↓</span>
+                </a>
+
+            </div>
+
+            <div class="hero-decoration" aria-hidden="true">
+                <span class="decoration-circle circle-one"></span>
+                <span class="decoration-circle circle-two"></span>
+                <span class="decoration-line"></span>
+                <span class="decoration-text">
+                    CAPTURED MOMENTS — 2026
+                </span>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section" id="gallery">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">THE COLLECTION</span>
+                    <h2>Discover the gallery<span>.</span></h2>
+                </div>
+
+                <p class="image-count" id="imageCount" aria-live="polite">
+                    12 photographs
+                </p>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="gallery-toolbar">
+
+                <div class="filter-list" role="group" aria-label="Filter images">
+
+                    <button
+                        class="filter-btn active"
+                        data-filter="all"
+                        aria-pressed="true"
+                    >
+                        All Photos
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="nature"
+                        aria-pressed="false"
+                    >
+                        Nature
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="architecture"
+                        aria-pressed="false"
+                    >
+                        Architecture
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="travel"
+                        aria-pressed="false"
+                    >
+                        Travel
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="wildlife"
+                        aria-pressed="false"
+                    >
+                        Wildlife
+                    </button>
+
+                </div>
+
+                <span class="toolbar-note">
+                    SELECT · EXPLORE · ENJOY
+                </span>
+
+            </div>
+
+            <!-- Images Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+
+                <!-- Image 1 -->
+                <article class="gallery-item" data-category="nature">
+                    <button class="image-card" aria-label="View Mountain Serenity">
+                        <img
+                            src="images/mountain.jpg"
+                            alt="Majestic mountains beneath a dramatic sky"
+                            loading="eager"
+                        >
+
+                        <span class="image-overlay">
+                            <span class="image-category">NATURE</span>
+                            <span class="image-title">Mountain Serenity</span>
+                            <span class="view-icon" aria-hidden="true">↗</span>
+                        </span>
+                    </button>
+                </article>
+
+                <!-- Image 2 -->
+                <article class="gallery-item" data-category="architecture">
+                    <button class="image-card" aria-label="View Modern Lines">
+                        <img
+                            src="images/architecture.jpg"
+                            alt="Contemporary architecture with geometric lines"
+                            loading="lazy"
+                        >
+
+                        <span class="image-overlay">
+                            <span class="image-category">ARCHITECTURE</span>
+                            <span class="image-title">Modern Lines</span>
+                            <span class="view-icon" aria-hidden="true">↗</span>
+                        </span>
+                    </button>
+                </article>
+
+                <!-- Image 3 -->
+                <article class="gallery-item" data-category="travel">
+                    <button class="image-card" aria-label="View Coastal Escape">
+                        <img
+                            src="images/coast.jpg"
+                            alt="Beautiful coastline and turquoise water"
+                            loading="lazy"
+                        >
+
+                        <span class="image-overlay">
+                            <span class="image-category">TRAVEL</span>
+                            <span class="image-title">Coastal Escape</span>
+                            <span class="view-icon" aria-hidden="true">↗</span>
+                        </span>
+                    </button>
+                </article>
+
+                <!-- Image 4 -->
+                <article class="gallery-item" data-category="wildlife">
+                    <button class="image-card" aria-label="View Wild Beauty">
+                        <img
+                            src="images/wildlife.jpg"
+                            alt="Wildlife in its natural environment"
+                            loading="lazy"
+                        >
+
+                        <span class="image-overlay">
+                            <span class="image-category">WILDLIFE</span>
+                            <span class="image-title">Wild Beauty</span>
+                            <span class="view-icon" aria-hidden="true">↗</span>
+                        </span>
+                    </button>
+                </article>
+
+                <!-- Image 5 -->
+                <article class="gallery-item" data-category="nature">
+                    <button class="image-card" aria-label="View Into the Forest">
+                        <img
+                            src="images/forest.jpg"
+                            alt="Sunlight filtering through a green forest"
+                            loading="lazy"
+                        >
+
+                        <span class="image-overlay">
+                            <span class="image-category">NATURE</span>
+                            <span class="image-title">Into the Forest</span>
+                            <span class="view-icon" aria-hidden="true">↗</span>
+                        </span>
+                    </button>
+                </article>
+
+                <!-- Image 6 -->
+                <article class="gallery-item" data-category="travel">
+                    <button class="image-card" aria-label="View City Adventures">
+                        <img
+                            src="images/city.jpg"
+                            alt="City skyline illuminated after dark"
+                            loading="lazy"
+                        >
+
+                        <span class="image-overlay">
+                            <span class="image-category">TRAVEL</span>
+                            <span class="image-title">City Adventures</span>
+                            <span class="view-icon" aria-hidden="true">↗</span>
+                        </span>
+                    </button>
+                </article>
+
+                <!-- Image 7 -->
+                <article class="gallery-item" data-category="architecture">
+                    <button class="image-card" aria-label="View Urban Geometry">
+                        <img
+                            src="images/geometry.jpg"
+                            alt="Architectural details and geometric building shapes"
+                            loading="lazy"
+                        >
+
+                        <span class="image-overlay">
+                            <span class="image-category">ARCHITECTURE</span>
+                            <span class="image-title">Urban Geometry</span>
+                            <span class="view-icon" aria-hidden="true">↗</span>
+                        </span>
+                    </button>
+                </article>
+
+                <!-- Image 8 -->
+                <article class="gallery-item" data-category="nature">
+                    <button class="image-card" aria-label="View Golden Hour">
+                        <img
+                            src="images/golden-hour.jpg"
+                            alt="Warm golden sunlight over a peaceful landscape"
+                            loading="lazy"
+                        >
+
+                        <span class="image-overlay">
+                            <span class="image-category">NATURE</span>
+                            <span class="image-title">Golden Hour</span>
+                            <span class="view-icon" aria-hidden="true">↗</span>
+                        </span>
+                    </button>
+                </article>
+
+                <!-- Image 9 -->
+                <article class="gallery-item" data-category="travel">
+                    <button class="image-card" aria-label="View Into the Blue">
+                        <img
+                            src="images/ocean.jpg"
+                            alt="Ocean waves reaching a sandy beach"
+                            loading="lazy"
+                        >
+
+                        <span class="image-overlay">
+                            <span class="image-category">TRAVEL</span>
+                            <span class="image-title">Into the Blue</span>
+                            <span class="view-icon" aria-hidden="true">↗</span>
+                        </span>
+                    </button>
+                </article>
+
+                <!-- Image 10 -->
+                <article class="gallery-item" data-category="wildlife">
+                    <button class="image-card" aria-label="View Feathered Friend">
+                        <img
+                            src="images/bird.jpg"
+                            alt="A bird resting on a tree branch"
+                            loading="lazy"
+                        >
+
+                        <span class="image-overlay">
+                            <span class="image-category">WILDLIFE</span>
+                            <span class="image-title">Feathered Friend</span>
+                            <span class="view-icon" aria-hidden="true">↗</span>
+                        </span>
+                    </button>
+                </article>
+
+                <!-- Image 11 -->
+                <article class="gallery-item" data-category="architecture">
+                    <button class="image-card" aria-label="View Timeless Design">
+                        <img
+                            src="images/design.jpg"
+                            alt="Elegant contemporary architectural design"
+                            loading="lazy"
+                        >
+
+                        <span class="image-overlay">
+                            <span class="image-category">ARCHITECTURE</span>
+                            <span class="image-title">Timeless Design</span>
+                            <span class="view-icon" aria-hidden="true">↗</span>
+                        </span>
+                    </button>
+                </article>
+
+                <!-- Image 12 -->
+                <article class="gallery-item" data-category="nature">
+                    <button class="image-card" aria-label="View Nature's Calm">
+                        <img
+                            src="images/lake.jpg"
+                            alt="A peaceful mountain lake surrounded by nature"
+                            loading="lazy"
+                        >
+
+                        <span class="image-overlay">
+                            <span class="image-category">NATURE</span>
+                            <span class="image-title">Nature's Calm</span>
+                            <span class="view-icon" aria-hidden="true">↗</span>
+                        </span>
+                    </button>
+                </article>
+
+            </div>
+
+            <p class="empty-message" id="emptyMessage" hidden>
+                No photographs found in this category.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#" class="footer-logo">FRAME/GALLERY</a>
+
+        <p>Every frame holds a memory.</p>
+
+        <span>BUILT WITH HTML · CSS · JAVASCRIPT</span>
+    </footer>
+
+    <!-- Lightbox -->
+    <div
+        class="lightbox"
+        id="lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Image viewer"
+        aria-hidden="true"
+        inert
+    >
+
+        <button
+            class="lightbox-close"
+            id="closeLightbox"
+            aria-label="Close image viewer"
+        >
+            &times;
+        </button>
+
+        <button
+            class="lightbox-nav prev-btn"
+            id="prevImage"
+            aria-label="Previous image"
+        >
+            &#10094;
+        </button>
+
+        <div class="lightbox-content">
+
+            <img id="lightboxImage" src="" alt="">
+
+            <div class="lightbox-caption">
+                <div>
+                    <span id="lightboxCategory"></span>
+                    <h3 id="lightboxTitle"></h3>
+                </div>
+
+                <span class="lightbox-counter" id="lightboxCounter">
+                    01 / 12
+                </span>
+            </div>
+
+        </div>
+
+        <button
+            class="lightbox-nav next-btn"
+            id="nextImage"
+            aria-label="Next image"
+        >
+            &#10095;
+        </button>
+
+    </div>
+
+    <script src="JS/script.js"></script>
+
+</body>
+</html>
