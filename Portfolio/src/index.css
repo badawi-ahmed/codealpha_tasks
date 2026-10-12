@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================================
+   CUSTOM SCROLLBAR
+================================ */
+
+html {
+  scrollbar-color: #14b8a6 #06191d;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #06191d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #14b8a6;
+  border-radius: 10px;
+  border: 1px solid #06191d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f4c95d;
+}

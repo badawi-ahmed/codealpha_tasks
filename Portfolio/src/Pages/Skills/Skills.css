@@ -1,0 +1,378 @@
+/* ==============================
+   SKILLS
+================================= */
+
+.skills {
+  min-height: 100vh;
+  position: relative;
+  padding: 100px 10%;
+  background: #06191d;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.skills-header {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 70px;
+}
+
+.skills-label {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #14b8a6;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.skills-header h2 {
+  margin: 0;
+  font-size: 52px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.skills-line {
+  width: 60px;
+  height: 3px;
+  margin: 22px auto;
+  background: #14b8a6;
+  border-radius: 10px;
+}
+
+.skills-header p {
+  margin: 0;
+  color: #9fb1b4;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* ==============================
+   SLIDER (container + arrows)
+================================= */
+
+.skills-slider {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-nav-btn {
+  flex: 0 0 auto;
+
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  border: 1px solid rgba(20, 184, 166, 0.25);
+  background: rgba(15, 40, 44, 0.6);
+  /* backdrop-filter: blur(6px); */
+
+  color: #7fd8cd;
+  cursor: pointer;
+
+  transition: all 0.25s ease, opacity 0.25s ease;
+}
+
+.skills-nav-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.skills-nav-btn:hover {
+  background: rgba(20, 184, 166, 0.15);
+  border-color: #14b8a6;
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+.skills-nav-btn:active {
+  transform: scale(0.96);
+}
+
+.skills-nav-btn.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.skills-container {
+  flex: 1 1 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+
+  max-width: 1000px;
+  margin: auto;
+
+  animation: skillsFadeNext 0.5s ease;
+}
+
+.skills-container[data-direction="prev"] {
+  animation-name: skillsFadePrev;
+}
+
+@keyframes skillsFadeNext {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes skillsFadePrev {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  animation: skillPopIn 0.55s ease backwards;
+}
+
+.skill-item:nth-child(1) { animation-delay: 0.05s; }
+.skill-item:nth-child(2) { animation-delay: 0.12s; }
+.skill-item:nth-child(3) { animation-delay: 0.19s; }
+.skill-item:nth-child(4) { animation-delay: 0.26s; }
+
+@keyframes skillPopIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.skill-circle {
+  width: 135px;
+  height: 135px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    conic-gradient(
+      var(--skill-color) var(--progress),
+      #123238 var(--progress)
+    );
+
+  box-shadow:
+    0 0 18px -2px var(--skill-color),
+    0 0 34px -8px var(--skill-color);
+
+  transform: rotate(-90deg);
+
+  transition: box-shadow 0.4s ease, background 0.15s linear;
+}
+
+.skill-item:hover .skill-circle {
+  box-shadow:
+    0 0 24px 0 var(--skill-color),
+    0 0 46px -4px var(--skill-color);
+}
+
+.skill-inner {
+  width: 110px;
+  height: 110px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #071f23;
+
+  transform: rotate(90deg);
+}
+
+.skill-inner span {
+  color: var(--skill-color);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.skill-item h3 {
+  margin-top: 20px;
+  color: #e5eeee;
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+.skill-item:hover h3 {
+  color: var(--skill-color);
+}
+
+/* ==============================
+   DOTS
+================================= */
+
+.skills-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 60px;
+}
+
+.skills-dots span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #29464a;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.skills-dots span:hover {
+  background: #3d6469;
+}
+
+.skills-dots .active {
+  width: 24px;
+  border-radius: 10px;
+  background: #14b8a6;
+}
+
+/* ==============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1100px) {
+  .skills {
+    padding: 90px 6%;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+  }
+
+  .skills-slider {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .skills {
+    padding: 80px 6%;
+  }
+
+  .skills-header h2 {
+    font-size: 40px;
+  }
+
+  .skills-header p {
+    font-size: 14px;
+  }
+
+  .skills-slider {
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .skills-nav-btn {
+    width: 36px;
+    height: 36px;
+    margin-top: 45px;
+  }
+
+  .skills-nav-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+  }
+
+  .skill-circle {
+    width: 115px;
+    height: 115px;
+  }
+
+  .skill-inner {
+    width: 92px;
+    height: 92px;
+  }
+
+  .skill-inner span {
+    font-size: 19px;
+  }
+
+  .skill-item h3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* =================================
+   SKILLS SECTION DIVIDER
+================================= */
+
+.skills {
+  position: relative;
+}
+
+.skills::after {
+  content: "";
+
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(20, 184, 166, 0.12) 20%,
+    rgba(20, 184, 166, 0.35) 40%,
+    rgba(20, 184, 166, 0.55) 50%,
+    rgba(20, 184, 166, 0.35) 60%,
+    rgba(20, 184, 166, 0.12) 80%,
+    transparent 100%
+  );
+
+  box-shadow:
+    0 3px 8px rgba(20, 184, 166, 0.18);
+}

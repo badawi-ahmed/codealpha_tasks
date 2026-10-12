@@ -1,0 +1,720 @@
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+  width: 100%;
+  background: #061a1d;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+
+/* =========================================
+   NEWSLETTER
+========================================= */
+
+.footer-newsletter {
+  width: 100%;
+  min-height: 125px;
+
+  padding: 30px 10%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 50px;
+
+  border-top: 1px solid rgba(159, 177, 180, 0.25);
+  border-bottom: 1px solid rgba(159, 177, 180, 0.10);
+
+  background: #07171b;
+}
+
+
+/* =========================================
+   NEWSLETTER TEXT
+========================================= */
+
+.newsletter-text {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.newsletter-text h3 {
+  margin: 0;
+
+  color: #e5eeee;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.newsletter-text p {
+  margin: 0;
+
+  color: #71888b;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   NEWSLETTER FORM
+========================================= */
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   EMAIL INPUT
+========================================= */
+
+.newsletter-form input {
+  width: 260px;
+  height: 43px;
+
+  padding: 0 18px;
+
+  border: 1px solid rgba(159, 177, 180, 0.16);
+
+  border-radius: 25px;
+
+  outline: none;
+
+  background: #0a2025;
+
+  color: #e5eeee;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  transition: all 0.3s ease;
+}
+
+
+/* Placeholder */
+
+.newsletter-form input::placeholder {
+  color: #657c7f;
+}
+
+
+/* Focus */
+
+.newsletter-form input:focus {
+  background: #0a2025;
+
+  color: #e5eeee;
+
+  border-color: #14b8a6;
+
+  outline: none;
+
+  box-shadow:
+    0 0 0 3px rgba(20, 184, 166, 0.08);
+}
+
+
+/* Autofill */
+
+.newsletter-form input:-webkit-autofill,
+.newsletter-form input:-webkit-autofill:hover,
+.newsletter-form input:-webkit-autofill:focus {
+
+  -webkit-text-fill-color: #e5eeee;
+
+  -webkit-box-shadow:
+    0 0 0 1000px #0a2025 inset;
+
+  transition:
+    background-color 5000s ease-in-out 0s;
+}
+
+
+/* =========================================
+   SUBSCRIBE BUTTON
+========================================= */
+
+.newsletter-form button {
+  height: 43px;
+
+  padding: 0 25px;
+
+  border: none;
+
+  border-radius: 25px;
+
+  background: #14b8a6;
+
+  color: #061a1d;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background: #1acdb9;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(20, 184, 166, 0.20);
+}
+
+.newsletter-form button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================
+   MAIN FOOTER
+========================================= */
+
+.footer-main {
+  width: 100%;
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding: 48px 10% 42px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.5fr
+    1fr
+    1.2fr;
+
+  column-gap: 75px;
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.footer-about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+/* =========================================
+   FOOTER LOGO
+========================================= */
+
+.footer-logo {
+  margin: 0 0 18px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  color: #e5eeee;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   BA
+========================================= */
+
+.footer-ba {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #14b8a6;
+
+  border-radius: 9px;
+
+  background: rgba(20, 184, 166, 0.08);
+
+  color: #14b8a6;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+
+  transition: all 0.3s ease;
+}
+
+
+/* BA Hover */
+
+.footer-logo:hover .footer-ba {
+  background: #14b8a6;
+
+  color: #062c30;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 18px rgba(20, 184, 166, 0.25);
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.footer-about > p {
+  max-width: 350px;
+
+  margin: 0;
+
+  color: #71888b;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 22px;
+}
+
+
+/* =========================================
+   SOCIAL CIRCLE
+========================================= */
+
+.footer-socials a {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #14b8a6;
+
+  border-radius: 50%;
+
+  background: rgba(20, 184, 166, 0.08);
+
+  color: #14b8a6;
+
+  text-decoration: none;
+
+  font-size: 18px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.footer-socials a i {
+  position: relative;
+
+  z-index: 2;
+
+  display: block;
+
+  line-height: 1;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* =========================================
+   HOVER BACKGROUND
+========================================= */
+
+.footer-socials a::before {
+  content: "";
+
+  position: absolute;
+
+  width: 0;
+  height: 0;
+
+  border-radius: 50%;
+
+  background: #14b8a6;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  transition:
+    width 0.35s ease,
+    height 0.35s ease;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.footer-socials a:hover {
+
+  border-color: #14b8a6;
+
+  background: #14b8a6;
+
+  color: #062c30;
+
+  transform: translateY(-5px) scale(1.06);
+
+  box-shadow:
+    0 8px 22px rgba(20, 184, 166, 0.35);
+}
+
+
+.footer-socials a:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+
+.footer-socials a:hover i {
+  color: #062c30;
+
+  transform: scale(1.15);
+}
+
+
+/* =========================================
+   ACTIVE / CLICK
+========================================= */
+
+.footer-socials a:active {
+  transform: translateY(-2px) scale(0.98);
+}
+
+
+/* =========================================
+   FOOTER COLUMNS
+========================================= */
+
+.footer-column {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 12px;
+}
+
+
+/* =========================================
+   COLUMN TITLE
+========================================= */
+
+.footer-column h3 {
+  margin: 0 0 8px;
+
+  color: #dce8e9;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.footer-column button {
+  width: fit-content;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent !important;
+
+  box-shadow: none;
+
+  color: #71888b;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  line-height: 1.4;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* Navigation Hover */
+
+.footer-column button:hover {
+  background: transparent !important;
+
+  color: #14b8a6;
+
+  transform: translateX(4px);
+}
+
+
+/* =========================================
+   WHAT I DO
+========================================= */
+
+.what-i-do p {
+  margin: 0;
+
+  color: #71888b;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  transition: color 0.3s ease;
+}
+
+
+.what-i-do p:hover {
+  color: #14b8a6;
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.footer-bottom {
+  width: 100%;
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding: 22px 10%;
+
+  border-top:
+    1px solid rgba(159, 177, 180, 0.10);
+
+  text-align: center;
+}
+
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #5e7578;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .footer-newsletter {
+    padding: 30px 6%;
+  }
+
+  .footer-main {
+    padding: 45px 6% 40px;
+
+    column-gap: 45px;
+  }
+
+  .newsletter-form input {
+    width: 220px;
+  }
+}
+
+
+/* =========================================
+   SMALL TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+  .footer-newsletter {
+    padding: 30px 6%;
+
+    gap: 25px;
+  }
+
+  .footer-main {
+    grid-template-columns:
+      1.4fr
+      1fr;
+
+    row-gap: 45px;
+
+    padding:
+      45px 6%
+      40px;
+  }
+
+  .footer-about {
+    grid-column: 1 / -1;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .footer-newsletter {
+
+    padding: 35px 7%;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 22px;
+  }
+
+  .newsletter-form {
+    width: 100%;
+  }
+
+  .newsletter-form input {
+    flex: 1;
+
+    width: auto;
+
+    min-width: 0;
+  }
+
+  .footer-main {
+
+    grid-template-columns: 1fr;
+
+    padding:
+      45px 7%
+      40px;
+
+    row-gap: 38px;
+  }
+
+  .footer-about {
+    grid-column: auto;
+  }
+
+  .footer-bottom {
+    padding:
+      20px 7%;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 430px) {
+
+  .newsletter-form {
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 10px;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+
+    height: 45px;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+
+    height: 45px;
+  }
+
+  .footer-socials {
+    gap: 9px;
+  }
+
+  .footer-socials a {
+    width: 38px;
+    height: 38px;
+
+    font-size: 16px;
+  }
+
+  .footer-ba {
+    width: 36px;
+    height: 36px;
+
+    font-size: 12px;
+  }
+}
